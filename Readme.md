@@ -6,10 +6,10 @@
  [1,0,1,1,0,1,0,0]
  Реализовать перевод двоичного числа в десятичное
 
-[Cod](/ex1/Program.cs)  |  [Blok-scheme]()
+[Cod](/ex1/Program.cs)  |  [Blok-scheme](/ex1/blok.drawio.png)
 
 
 # ex02
 Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 
-[Cod](/ex02/Program.cs)  |  [Blok-scheme]()
+[Cod](/ex02/Program.cs)  |  [Blok-scheme](/ex02/blok.drawio.png)
