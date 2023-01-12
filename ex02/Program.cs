@@ -23,7 +23,7 @@ int GetSumDigit(int Number)
   }
   //Console.WriteLine($"Cумма:  {Sum}");  //пробный вывод суммы
   return Sum;
-  
+
 }
 
 //3.Печать sum цифер
