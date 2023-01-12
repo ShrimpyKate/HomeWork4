@@ -1,9 +1,10 @@
 ﻿//  Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 
-//Принять число Number от пользователя
-// Найти sum цифер в числе
-//Печать sum цифер
+//1.Принять число Number от пользователя
+//2.Найти sum цифер в числе
+//3.Печать sum цифер
 
+//1.Принять число Number от пользователя
 int GetNumberByUser()
 {
   Console.WriteLine("Введите число: ");
@@ -11,6 +12,7 @@ int GetNumberByUser()
   return Number;
 }
 
+//2.Найти sum цифер в числе
 int GetSumDigit(int Number)
 {
   int Sum = 0;
@@ -19,14 +21,15 @@ int GetSumDigit(int Number)
     Sum = Sum + Number % 10;
     Number = Number / 10;
   }
-  //Console.WriteLine($"Cумма:  {Sum}");
+  //Console.WriteLine($"Cумма:  {Sum}");  //пробный вывод суммы
   return Sum;
   
 }
 
-void PrintSum();
+//3.Печать sum цифер
+void PrintSum(int Sum)
 {
-  Console.WriteLine($"Cумма цифер в числе: {}");
+  Console.WriteLine($"Cумма цифер в числе: {Sum}");
 }
 
 

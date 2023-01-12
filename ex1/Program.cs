@@ -6,31 +6,19 @@
 // Реализовать перевод двоичного числа в десятичное
 
 // 1. Ввод N
-// int <- (string)
 
 // 2. Создание массива
-// int[] <- (int)
 
 // 3. Заполнение массива 0 и 1
-// void <- (int[])
 
 // 4. Печать массива
-// string <- (int[])
 
 // 5. Конвертация из 2-ого в 10-ое
-// int <- (int[])
 
-// 6. 10110100 >> 180
-
-// int GetNumberByUser(string text)
-// {
-//   int number = Convert.ToInt32(Console.ReadLine());
-//   return number;
-// }
 
 int GetArraySize()
 {
-  Console.WriteLine("ВВедите количество элементов массива: ");
+  Console.Write("Ведите количество элементов массива: ");
   int size = Convert.ToInt32(Console.ReadLine());
   return size;
 }
@@ -80,7 +68,7 @@ void ConvertToDec(int[] arr)
 
     sum += arr[i] * Convert.ToInt32(Math.Pow(2, temp));
     temp = temp - 1;
-    
+
   }
   Console.WriteLine($"Число в десятичном представлении: {sum}");
 }
@@ -91,4 +79,5 @@ int[] arr = myArray(arrSize);
 FillArray(arr);
 PrintArray(arr);
 ConvertToDec(arr);
+
 
