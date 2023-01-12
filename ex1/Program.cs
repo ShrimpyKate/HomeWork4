@@ -27,6 +27,7 @@
 //   int number = Convert.ToInt32(Console.ReadLine());
 //   return number;
 // }
+
 int GetArraySize()
 {
   Console.WriteLine("ВВедите количество элементов массива: ");
@@ -34,7 +35,7 @@ int GetArraySize()
   return size;
 }
 
-
+// 2. Создание массива
 int[] myArray(int size)
 {
   return new int[size];
@@ -42,8 +43,6 @@ int[] myArray(int size)
 
 
 // 3. Заполнение массива 0 и 1
-// void <- (int[])
-
 void FillArray(int[] myarr)
 {
   int index = 0;
@@ -57,10 +56,9 @@ void FillArray(int[] myarr)
 }
 
 // 4. Печать массива
-// string <- (int[])
-
 void PrintArray(int[] array)
 {
+  Console.Write("Число в двоичном представлении: ");
   int count = array.Length;
   for (int i = 0; i < count; i++)
   {
@@ -69,6 +67,8 @@ void PrintArray(int[] array)
   Console.WriteLine();
 }
 
+
+// 5. Конвертация из 2-ого в 10-ое
 void ConvertToDec(int[] arr)
 {
   int count = arr.Length;
@@ -80,9 +80,9 @@ void ConvertToDec(int[] arr)
 
     sum += arr[i] * Convert.ToInt32(Math.Pow(2, temp));
     temp = temp - 1;
-    Console.WriteLine($"шаг {sum}");
+    
   }
-  Console.WriteLine($"десятич {sum}");
+  Console.WriteLine($"Число в десятичном представлении: {sum}");
 }
 
 int arrSize = GetArraySize();
